@@ -106,7 +106,8 @@ let notes = [
 // app.listen(PORT)
 // console.log(`Server running on port ${PORT}`)
 
-const PORT = 3001
+// const PORT = 3001
+const PORT = process.env.PORT || 3001 //use this when deploying on heroku, render, or flyio
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
